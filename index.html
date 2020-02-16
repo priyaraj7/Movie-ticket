@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movies @ Marymoor</h1>
+
+      <form action="/action_page.php">
+        <label for="movies">Movies:</label>
+        <select id="movies" name="movies">
+          <option value="" disabled selected hidden>Choose a Movie</option>
+          <option value="frozen">Disney Frozen II</option>
+          <option value="jumanji">Jumanji</option>
+          <option value="parasite">Parasite</option>
+        </select>
+      </form>
+
+      <form action="/action_page.php">
+        <label for="timings">Time:</label>
+        <select id="movies" name="movies">
+          <option value="" disabled selected hidden>Choose a Time</option>
+          <option value="morning">Morning</option>
+          <option value="Evening">Evening</option>
+          <option value="Afternoon">Afternoon</option>
+        </select>
+      </form>
+
+      <form action="/action_page.php">
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+          <option value="" disabled selected hidden>Select the Age</option>
+          <option value="adult">Adult</option>
+          <option value="senior">Senior</option>
+          <option value="child">Child</option>
+        </select>
+        <br />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
