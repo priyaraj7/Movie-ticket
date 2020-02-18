@@ -23,9 +23,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Movies @ Marymoor</h1>
-
-      <form action="/action_page.php">
+      <header>
+        <h1>Movies @ Marymoor</h1>
+      </header>
+      <br />
+      <form id="form">
         <label for="movies">Movies:</label>
         <select id="movies" name="movies">
           <option value="" disabled selected hidden>Choose a Movie</option>
@@ -33,19 +35,18 @@
           <option value="jumanji">Jumanji</option>
           <option value="parasite">Parasite</option>
         </select>
-      </form>
 
-      <form action="/action_page.php">
+        <br />
+
         <label for="timings">Time:</label>
-        <select id="movies" name="movies">
+        <select id="time" name="time">
           <option value="" disabled selected hidden>Choose a Time</option>
           <option value="morning">Morning</option>
-          <option value="Evening">Evening</option>
-          <option value="Afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <option value="afternoon">Afternoon</option>
         </select>
-      </form>
+        <br />
 
-      <form action="/action_page.php">
         <label for="age">Age:</label>
         <select id="age" name="age">
           <option value="" disabled selected hidden>Select the Age</option>
@@ -54,8 +55,13 @@
           <option value="child">Child</option>
         </select>
         <br />
+        <br />
         <input type="submit" />
       </form>
+      <div id = "result">
+        <ul id=>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
